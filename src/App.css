@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Tamma+2:wght@500&family=Hind+Siliguri:wght@600&display=swap');
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -9,7 +11,8 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color:#eceece;
+  /* background-image: url(''); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +27,16 @@ body {
   width: 350px;
 }
 
+.head-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-family: 'Anton', sans-serif;
+  font-stretch: expanded;
+  letter-spacing: 3px;
+  
+}
+
 h1 {
   letter-spacing: 1px;
   margin: 0;
@@ -33,29 +46,34 @@ h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
+  font-family: 'Baloo Tamma 2', cursive;
 }
 
 h4 {
   margin: 0;
   text-transform: uppercase;
+  font-size: large;
+  font-family: 'Baloo Tamma 2', cursive;
 }
 
-.inc-exp-container {
-  background-color: #fff;
+.pro-exp-container {
+  background-color:#ccc3a7;;
   box-shadow: var(--box-shadow);
+  border-radius: 10px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.inc-exp-container > div {
+.pro-exp-container > div {
   flex: 1;
   text-align: center;
 }
 
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+.pro-exp-container > div:first-of-type {
+  border-right: 1px solid  rgb(138, 222, 233);
+  
 }
 
 .money {
@@ -65,11 +83,11 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #44993c;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #d12917;
 }
 
 label {
@@ -79,17 +97,17 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
+  border: 1px solid  rgb(138, 222, 233);
+  border-radius: 8px;
   display: block;
   font-size: 16px;
   padding: 10px;
   width: 100%;
-}
+ }
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #848f26;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -112,8 +130,9 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: #ccc3a7;
   box-shadow: var(--box-shadow);
+  border-radius: 5px;
   color: #333;
   display: flex;
   justify-content: space-between;
@@ -154,4 +173,9 @@ input[type='number'] {
   .container {
     width: 300px;
   }
+}
+.amount-box {
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: large;
+  font-weight: bold
 }
